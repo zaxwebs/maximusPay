@@ -1,1 +1,25 @@
 // Overwrite (https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss)
+
+// colors
+$primary: #ff4e00;
+$secondary: #06c9ff;
+
+//spacing
+$spacer: 1rem;
+
+// typography
+$font-family-base: 'Hind', sans-serif;
+$font-weight-normal: 300;
+$headings-font-family: 'Montserrat', sans-serif;
+$headings-font-weight: 700;
+$headings-margin-bottom: $spacer;
+$font-weight-bolder: 700;
+
+// buttons
+$input-btn-font-size: 0.8rem;
+$input-btn-font-size-lg: 0.9rem;
+$btn-border-radius: 999rem;
+$btn-border-radius-lg: $btn-border-radius;
+$input-btn-padding-x: 2rem;
+$input-btn-padding-y-lg: 1rem;
+$input-btn-padding-x-lg: 2rem;
