@@ -1,0 +1,36 @@
+@import '../styles/main.scss';
+
+section {
+	@extend .py-5;
+}
+
+.info {
+	@extend .pt-1;
+	p {
+		color: $gray-600;
+	}
+}
+
+.flex-demo-wrapper {
+	@extend .p-3;
+	min-height: 200px;
+	background: #bac8ff;
+	border: 1px solid #91a7ff;
+
+	.flex-demo {
+		color: #6741d9;
+		border: 1px solid #6741d9;
+		background: #d0bfff;
+		max-width: 100px;
+		max-height: 100px;
+	}
+}
+
+.bg-demo {
+	min-height: 250px;
+}
+
+.bg-cover-demo {
+	@extend .bg-demo;
+	background-image: url('./images/cover.jpg');
+}

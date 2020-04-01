@@ -1,0 +1,33 @@
+// Mixins
+@mixin bg-image($path: false) {
+	@if $path {
+		background-image: url($path);
+	}
+}
+
+// Implementations
+
+@each $name, $gradient in $gradients {
+	.bg-gradient-#{$name} {
+		$background: mix($gradient...);
+		background-color: $background;
+		color: color-yiq($background);
+		background-image: linear-gradient($gradient-angle, $gradient...);
+	}
+}
+
+.bg-cover {
+	background-size: cover;
+}
+
+.bg-fixed {
+	background-attachment: fixed;
+}
+
+.bg-center {
+	background-position: center center;
+}
+
+.bg-hero {
+	@extend .bg-cover, .bg-fixed, .bg-center;
+}
