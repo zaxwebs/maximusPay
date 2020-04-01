@@ -18,6 +18,10 @@ section {
   @extend .my-3;
 }
 
+.block-sm {
+  @extend .my-1;
+}
+
 .btn {
   font-family: $headings-font-family;
   text-transform: uppercase;
@@ -40,4 +44,8 @@ section.hero {
     max-width: 290px;
     flex-wrap: wrap;
   }
+}
+section.client-strip {
+  padding: 1rem 0;
+  padding-bottom: 2.5rem;
 }
