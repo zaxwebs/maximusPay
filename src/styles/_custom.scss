@@ -57,6 +57,27 @@ section.modes {
   }
 }
 section.features {
-  background-image: linear-gradient(45deg, $primary, $primary-2);
+  background: $primary;
+
   color: #fff;
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    background-image: url('../images/man-smiling.png');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: 30px;
+  }
+
+  p {
+    display: inline;
+    background: rgba($primary, 0.5);
+  }
+}
+section.benefits {
+  .block-sm {
+    @extend .p-3;
+    border-left: 4px solid $primary;
+    box-shadow: 0 0 15px 5px rgba(#666666, 0.2);
+  }
 }
