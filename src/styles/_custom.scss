@@ -56,6 +56,22 @@ section.modes {
       margin-bottom: 1rem;
     }
   }
+
+  @include media-breakpoint-up(lg) {
+    background-image: url('../images/man-smiling.png');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-size: 480px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    background-image: url('../images/man-smiling.png');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-size: auto;
+  }
 }
 section.features {
   background: $primary;
@@ -65,17 +81,10 @@ section.features {
   position: relative;
 }
 section.benefits {
-  @include media-breakpoint-up(lg) {
-    background-image: url('../images/man-smiling.png');
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: right;
-  }
-
   .block-sm {
     @extend .p-3;
     border-left: 4px solid $primary;
     box-shadow: 0 0 15px 5px rgba(#666666, 0.2);
-    background: white;
+    background: rgba(white, 0.7);
   }
 }
