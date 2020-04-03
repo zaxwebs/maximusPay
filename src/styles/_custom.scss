@@ -62,6 +62,21 @@ section.modes {
     }
   }
 
+  .mode {
+    border-radius: 2px;
+    padding: 1rem;
+    border: 1px solid $secondary;
+    background-image: linear-gradient(
+      to bottom,
+      rgba($secondary, 0.1) 20%,
+      #fff
+    );
+
+    h5 {
+      color: $secondary;
+    }
+  }
+
   @include media-breakpoint-up(lg) {
     background-image: url('../images/man-smiling.png');
     background-repeat: no-repeat;
