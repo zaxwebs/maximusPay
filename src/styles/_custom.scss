@@ -47,6 +47,10 @@ footer {
 .btn-primary {
   box-shadow: 0 10px 20px rgba($primary, 40%);
 }
+
+ion-icon {
+  margin-bottom: -2px;
+}
 // LAYOUT
 
 // PAGE(s)
@@ -77,23 +81,12 @@ section.modes {
   .mode {
     border-radius: 2px;
     padding: 1rem;
-    border: 1px solid #727272;
+    border: 1px solid $secondary-2;
+    border-bottom: 8px solid $secondary-2;
     box-shadow: 0 0 10px 4px rgba($secondary-2, 0.1);
 
     img {
-      transform: rotate(2deg);
-    }
-
-    p {
-      @extend .text-gray;
-    }
-
-    &:hover {
-      border: 1px solid $secondary-2;
-
-      h5 {
-        color: $secondary-2;
-      }
+      transform: rotate(3deg);
     }
   }
 
