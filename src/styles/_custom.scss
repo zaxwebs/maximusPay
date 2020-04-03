@@ -26,6 +26,10 @@ footer {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.text-gray {
+  color: #6c757d;
+}
 // COMPONENTS
 .block {
   @extend .my-3;
@@ -76,16 +80,20 @@ section.modes {
     border: 1px solid #727272;
     box-shadow: 0 0 10px 4px rgba($secondary-2, 0.1);
 
+    img {
+      transform: rotate(2deg);
+    }
+
+    p {
+      @extend .text-gray;
+    }
+
     &:hover {
       border: 1px solid $secondary-2;
 
       h5 {
         color: $secondary-2;
       }
-    }
-
-    img {
-      transform: rotate(2deg);
     }
   }
 
