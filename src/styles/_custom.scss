@@ -18,6 +18,14 @@ footer {
   display: flex;
   align-items: center;
 }
+
+.text-gradient-secondary {
+  color: $secondary;
+  background: -webkit-linear-gradient($secondary, $secondary-2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 // COMPONENTS
 .block {
   @extend .my-3;
