@@ -71,10 +71,6 @@ section.modes {
       rgba($secondary, 0.1) 20%,
       #fff
     );
-
-    h5 {
-      color: $secondary;
-    }
   }
 
   @include media-breakpoint-up(lg) {
