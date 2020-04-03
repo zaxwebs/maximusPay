@@ -8,6 +8,11 @@ section {
     padding: 4rem 0;
   }
 }
+footer {
+  padding: 1.5rem 0;
+  color: #fff;
+  background: #131313;
+}
 // UTILS
 .flex-y {
   display: flex;
@@ -84,7 +89,10 @@ section.benefits {
   .block-sm {
     @extend .p-3;
     border-left: 4px solid $primary;
-    box-shadow: 0 0 15px 5px rgba(#666666, 0.2);
+    box-shadow: 0 0 10px 4px rgba(#666666, 0.1);
     background: rgba(white, 0.7);
   }
+}
+section.cta {
+  background-image: url('../images/corner-squares.png');
 }
