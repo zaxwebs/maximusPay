@@ -72,24 +72,6 @@ section.client-strip {
   padding-bottom: 3rem;
 }
 section.modes {
-  .modes {
-    img {
-      margin-bottom: 1rem;
-    }
-  }
-
-  .mode {
-    border-radius: 2px;
-    padding: 1rem;
-    border: 1px solid $secondary-2;
-    border-bottom: 8px solid $secondary-2;
-    box-shadow: 0 0 10px 4px rgba($secondary-2, 0.1);
-
-    img {
-      transform: rotate(3deg);
-    }
-  }
-
   @include media-breakpoint-up(lg) {
     background-image: url('../images/man-smiling.png');
     background-repeat: no-repeat;
