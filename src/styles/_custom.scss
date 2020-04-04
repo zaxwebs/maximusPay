@@ -1,6 +1,7 @@
 // BASE
 html {
   font-size: 17px;
+  scroll-behavior: smooth;
 }
 body {
   color: #3a3a3a;
@@ -10,6 +11,7 @@ section {
   @include media-breakpoint-up(md) {
     padding: 4rem 0;
   }
+  position: relative;
 }
 footer {
   padding: 1.5rem 0;
@@ -38,6 +40,13 @@ h1 {
 .text-gray {
   color: #6c757d;
 }
+
+a.anchor {
+  display: block;
+  position: absolute;
+  top: -59px;
+  visibility: hidden;
+}
 // COMPONENTS
 .block {
   @extend .my-3;
@@ -60,13 +69,17 @@ ion-icon {
   margin-bottom: -2px;
 }
 // LAYOUT
-
+.navbar {
+  background-color: rgba($white, 0.9) !important;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 3px 3px rgba(#333, 0.1);
+}
 // PAGE(s)
 section.hero {
   min-height: 80vh;
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 59px);
 
   .selling-points {
     display: flex;
