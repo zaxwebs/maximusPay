@@ -17,6 +17,40 @@
     ></script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand text-primary" href="#">Maximus Pay</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Payment Modes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Benefits</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <section class="hero">
       <div class="container">
         <div class="row">
@@ -41,6 +75,8 @@
           </div>
           <div class="block col-md-6 col-lg-5">
             <img
+              data-aos="fade-right"
+              data-aos-delay="300"
               class="img-fluid"
               src="./images/woman-on-phone.jpg"
               alt="woman on phone"
@@ -106,14 +142,14 @@
               Get Paid in Multiple Ways via Maximus Pay
             </h1>
             <p>
-              <b>More Payment Modes = More Payment Preferences Satisfied</b>. It
+              More Payment Modes = More Payment Preferences Satisfied. It
               increases your outlook as a high-profile merchant, a brand your
               customers can rely on.
             </p>
           </div>
           <div class="col-lg-6">
             <div class="row modes">
-              <div class="block col-md-6">
+              <div class="block col-md-6" data-aos="fade-up">
                 <div class="card">
                   <img
                     src="./images/modes/qr.png"
@@ -128,22 +164,7 @@
                   </div>
                 </div>
               </div>
-              <div class="block col-md-6">
-                <div class="card">
-                  <img
-                    src="./images/modes/number.png"
-                    class="card-img-top"
-                    alt="mode"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Phone Number</h5>
-                    <p class="card-text">
-                      Online payment via phone number.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="block col-md-6">
+              <div class="block col-md-6" data-aos="fade-up">
                 <div class="card">
                   <img
                     src="./images/modes/ussd.png"
@@ -158,7 +179,22 @@
                   </div>
                 </div>
               </div>
-              <div class="block col-md-6">
+              <div class="block col-md-6" data-aos="fade-up">
+                <div class="card">
+                  <img
+                    src="./images/modes/number.png"
+                    class="card-img-top"
+                    alt="mode"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Phone Number</h5>
+                    <p class="card-text">
+                      Online payment via phone number.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="block col-md-6" data-aos="fade-up">
                 <div class="card">
                   <img
                     src="./images/modes/pos.png"
