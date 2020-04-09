@@ -83,6 +83,19 @@ ion-icon {
   backdrop-filter: blur(5px);
   box-shadow: 0 0 3px 3px rgba(#333, 0.1);
 }
+nav {
+  .logo {
+    min-width: 220px;
+  }
+  .nav-item {
+    background-color: white;
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 // PAGE(s)
 section.hero {
   min-height: 80vh;
