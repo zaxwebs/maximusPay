@@ -68,6 +68,15 @@ a.anchor {
 ion-icon {
   margin-bottom: -2px;
 }
+
+.card {
+  border-radius: 0;
+}
+
+.card-img-top {
+  border-bottom: 8px solid $primary-2;
+  border-radius: 0;
+}
 // LAYOUT
 .navbar {
   background-color: rgba($white, 0.9) !important;
